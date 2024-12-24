@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client"
 import { useState } from "react"
 import { useRouter } from "next/navigation"
@@ -226,7 +227,7 @@ export default function Navbar() {
                     key={menu.id}
                     className="h-10 hover:bg-gray-50 pl-3 text-sm text-gray-700 text-left"
                     onClick={() => {
-                      menu.signOut ? signOut() : null
+                      menu.signOut ? signOut({ callbackUrl: "/" }) : null
                       router.push(menu.url)
                       setShowMenu(false)
                     }}
