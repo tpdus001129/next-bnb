@@ -45,13 +45,15 @@ model VerificationToken {
 
 model User {
   id          String     @id @default(uuid())
-  email       String?     @unique
+  email       String?    @unique
   name        String?
   image       String?
   desc        String?
   emailVerified  Boolean?
+  phone       String?
+  address     String?
   rooms       Room[]
-  account     Account[]
+  accounts    Account[]
   sessions    Session[]
 }
 
