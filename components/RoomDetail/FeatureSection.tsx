@@ -191,12 +191,6 @@ export default function FeatureSection({ data }: { data: RoomType }) {
           <CalendarSection />
         </div>
         <div className="py-8 px-4 border-b border-gray-300 leading-8 text-gray-800">
-          <h1 className="font-semibold text-xl mb-2">후기</h1>
-          <div className="mt-4 rounded-lg p-5 border border-gray-300">
-            후기가 들어갑니다
-          </div>
-        </div>
-        <div className="py-8 px-4 border-b border-gray-300 leading-8 text-gray-800">
           <h1 className="font-semibold text-xl mb-2">호스팅 지역</h1>
           <div className="mt-4 rounded-lg p-5 border border-gray-300">
             지도가 들어갑니다
